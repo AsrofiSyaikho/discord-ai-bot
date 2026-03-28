@@ -6,6 +6,7 @@ export function handleHelp(message) {
       { name: 'Chat dengan AI', value: 'Mention bot atau DM langsung\nContoh: `@BotKamu halo!`' },
       { name: 'Reset percakapan', value: 'Ketik `;reset` untuk hapus history chat' },
       { name: 'Bantuan', value: 'Ketik `;help` untuk tampilkan pesan ini' },
+      { name: 'Kata-Kata Inspirasi', value: 'Ketik `;inspirasi` untuk tampilkan pesan ini' },
     ],
     footer: { text: 'Powered by Gemini AI' },
   }

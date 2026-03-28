@@ -1,5 +1,6 @@
 import { handleChat, handleReset } from '../commands/chat.js'
 import { handleHelp } from '../commands/help.js'
+import { handleInspirasi } from '../commands/inspirasi.js'
 import { isOnCooldown, getRemainingCooldown, setCooldown } from '../services/cooldownService.js' // tambah ini
 import logger from '../utils/logger.js'
 
@@ -13,6 +14,7 @@ export function setupMessageHandler(client) {
 
     if (content === ';help') return handleHelp(message)
     if (content === ';reset') return handleReset(message)
+    if (content === ';inspirasi') return handleInspirasi(message)
 
     if (!isMentioned) return
 
